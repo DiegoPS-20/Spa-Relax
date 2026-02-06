@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Spa Relax</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <header>
+        <h1>Spa Relax</h1>
+        <nav>
+            <a href="#generales">Generales</a>
+            <a href="#galeria">Galería</a>
+            <a href="#contacto">Contáctanos</a>
+        </nav>
+    </header>
+
+    <!-- GENERALES -->
+    <section id="generales">
+        <h2>Sobre Nosotros</h2>
+        <p>
+            Spa Relax es un espacio dedicado al bienestar físico y mental.
+            Ofrecemos masajes relajantes, tratamientos faciales, aromaterapia
+            y experiencias diseñadas para renovar cuerpo y mente.
+        </p>
+    </section>
+
+    <!-- GALERIA -->
+    <section id="galeria">
+        <h2>Galería</h2>
+        <div class="galeria">
+            <img src="imagen1.JPG" alt="Spa 1">
+            <img src="imagen2.JPG" alt="Spa 2">
+            <img src="imagen3.JPG" alt="Spa 3">
+        </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+
+        <form id="formulario">
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Correo" required>
+            <input type="tel" placeholder="Teléfono" required>
+            <textarea placeholder="Dudas o comentarios"></textarea>
+
+            <div class="botones">
+                <button type="reset">Limpiar</button>
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+
+        <div class="ubicacion">
+            <p><strong>Dirección:</strong> Calle 15 Ote., Azcarate, 72501 Heroica Puebla de Zaragoza, Pue.</p>
+            <p><strong>Teléfono:</strong> 555-123-4567</p>
+        </div>
+
+        <!-- MAPA -->
+        <iframe
+    src="https://www.google.com/maps?q=19.031543,-98.1874125&output=embed"
+    width="100%"
+    height="300"
+    style="border:0;"
+    loading="lazy">
+</iframe>
+
+
+    <footer>
+        <p>2026 Spa Relax Diego PS</p>
+    </footer>
+
+    <script>
+        document.getElementById("formulario").addEventListener("submit", function(e){
+            e.preventDefault();
+            alert("Formulario enviado correctamente");
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>

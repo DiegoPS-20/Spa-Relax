@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inicio de Sesión | Spa Relax</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body class="login-body">
+
+    <div class="login-container">
+        <h2>Iniciar Sesión</h2>
+
+        <input type="text" id="usuario" placeholder="Usuario">
+        <input type="password" id="password" placeholder="Contraseña">
+
+        <button onclick="iniciarSesion()">Entrar</button>
+
+        <p id="mensaje"></p>
+    </div>
+
+    <script>
+        function iniciarSesion() {
+            const usuario = document.getElementById("usuario").value;
+            const password = document.getElementById("password").value;
+
+            if (usuario === "admin" && password === "1234") {
+                window.location.href = "spaPrincipal.html";
+            } else {
+                document.getElementById("mensaje").innerText = "Usuario o contraseña incorrectos";
+            }
+        }
+    </script>
+
+</body>
+</html>
+

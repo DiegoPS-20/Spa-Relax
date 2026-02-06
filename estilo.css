@@ -1,0 +1,212 @@
+/* ESTILOS GENERALES */
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background-color: #f6f1eb;
+    color: #5a4632;
+}
+
+/* ================= LOGIN ================= */
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #e6d8c3, #f6f1eb);
+}
+
+.login-container {
+    background-color: #fffdf9;
+    padding: 35px;
+    border-radius: 15px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.login-container h2 {
+    color: #8b6f47;
+    margin-bottom: 20px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #d8cbb8;
+    background-color: #fdfbf7;
+}
+
+.login-container input:focus {
+    outline: none;
+    border-color: #c2a878;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background-color: #c2a878;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-container button:hover {
+    background-color: #a98c5a;
+}
+
+#mensaje {
+    margin-top: 10px;
+    color: #b44;
+}
+
+/* ================= HEADER ================= */
+header {
+    background-color: #e6d8c3;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+header h1 {
+    margin: 0;
+    color: #8b6f47;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #5a4632;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: 500;
+    padding-bottom: 3px;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #c2a878;
+}
+
+/* ================= SECCIONES ================= */
+section {
+    background-color: #fffdf9;
+    margin: 30px auto;
+    padding: 35px;
+    width: 90%;
+    max-width: 1100px;
+    border-radius: 18px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+section h2 {
+    color: #8b6f47;
+    margin-bottom: 15px;
+}
+
+section p {
+    line-height: 1.7;
+}
+
+/* ================= GALERIA ================= */
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.galeria img {
+    width: 260px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* ================= FORMULARIO ================= */
+form {
+    margin-top: 20px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #d8cbb8;
+    background-color: #fdfbf7;
+    font-family: inherit;
+}
+
+form textarea {
+    resize: none;
+    height: 120px;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #c2a878;
+}
+
+.botones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.botones button {
+    width: 48%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.botones button[type="submit"] {
+    background-color: #c2a878;
+    color: white;
+}
+
+.botones button[type="submit"]:hover {
+    background-color: #a98c5a;
+}
+
+.botones button[type="reset"] {
+    background-color: #e6d8c3;
+    color: #5a4632;
+}
+
+.botones button[type="reset"]:hover {
+    background-color: #d3c1a3;
+}
+
+/* ================= UBICACIÓN ================= */
+.ubicacion {
+    margin-top: 20px;
+    background-color: #f6f1eb;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* ================= FOOTER ================= */
+footer {
+    background-color: #e6d8c3;
+    color: #5a4632;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
